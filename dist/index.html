@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Text Editor</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/ToolMenu.js" defer></script>
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="text-editor-container">
+        <div class="editor-menu">
+          <section id="text-edit-btns">
+            <button
+              data-command="bold"
+              class="menu-btn no-select"
+              id="bold-btn"
+            >
+              <i class="bi bi-type-bold"></i>
+            </button>
+            <button
+              data-command="italic"
+              class="menu-btn no-select"
+              id="italic-btn"
+            >
+              <i class="bi bi-type-italic"></i>
+            </button>
+            <button
+              data-command="insertUnorderedList"
+              class="menu-btn no-select"
+              id="numeric-btn"
+            >
+              <i class="bi bi-list-ul"></i>
+            </button>
+          </section>
+          <section id="json-file-btns">
+            <button class="menu-btn no-select" id="import-btn">
+              <i class="bi bi-box-arrow-in-up-left"></i>
+            </button>
+            <button class="menu-btn no-select" id="export-btn">
+              <i class="bi bi-box-arrow-down-right"></i>
+            </button>
+          </section>
+        </div>
+        <div contenteditable="true" id="editor" class="text-editor"></div>
+      </div>
+    </section>
+  </body>
+</html>
